@@ -1,16 +1,19 @@
-# ppmviewer README
+# PPM Viewer
 
-PPMViewer can create a preview window of PPM files.
+PPMViewer reads and a PPM file and renders it to a webview.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+* Supports PPM files
+* Currently it only supports ASCII characters and does not validate color values.
+
+<!-- Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
 For example if there is an image subfolder under your extension project workspace:
 
 \!\[feature X\]\(images/feature-x.png\)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow. -->
 
 <!-- ## Requirements
 
@@ -31,6 +34,14 @@ This extension contributes the following settings:
 
 <!-- Calling out known issues can help limit users opening duplicate issues against your extension. -->
 
+* Moving the tab too many times can cause the ppm file to stop displaying until the tab is closed and reopened.
+
+## Extension Commands
+
+This extension has the following commands:
+
+* `ppmviewer.viewppm`: View PPM File
+
 ## Release Notes
 
 <!-- Users appreciate release notes as you update your extension. -->
@@ -38,6 +49,10 @@ This extension contributes the following settings:
 ### 1.0.0
 
 Initial release of PPMViewer
+
+### Visual Studio Marketplace
+
+This extension is available on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=AYH.ppmviewer) for Visual Studio Code
 
 <!-- ### 1.0.1
 
