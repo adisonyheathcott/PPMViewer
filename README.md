@@ -46,6 +46,10 @@ This extension has the following commands:
 
 <!-- Users appreciate release notes as you update your extension. -->
 
+### 1.1.0
+
+Fixed support for large PPM files
+
 ### 1.0.0
 
 Initial release of PPMViewer
