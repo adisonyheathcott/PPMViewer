@@ -46,6 +46,10 @@ This extension has the following commands:
 
 <!-- Users appreciate release notes as you update your extension. -->
 
+### 1.2.0
+
+Fixed the viewppm command not working due to the command not knowing what file to view.
+
 ### 1.1.1
 
 Fixed security vulnerabilities with npm modules.
