@@ -17,6 +17,10 @@ export function activate(context: vscode.ExtensionContext) {
 				? vscode.window.activeTextEditor.viewColumn
 				: undefined;
 
+			if (!uri) {
+				uri = vscode.window.activeTextEditor?.document.uri;
+			}
+
 			if (currentPanel) {
 				// Show the panel in the target column
 				currentPanel.reveal(columnToShowIn);
