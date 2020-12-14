@@ -2,7 +2,6 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import * as fs from 'fs';
-import { URI } from 'vscode-uri';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -66,8 +65,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 			// File stream
 			const p = uri?.fsPath != undefined ? uri.fsPath : "";
-			const s = fs.createReadStream(URI.parse(p).path, { encoding: 'ascii' });
-
+			const s = fs.createReadStream(p, { encoding: 'ascii' });
 			var data = '';
 			s.on('data', function(chunk: string) {
 				data += chunk;
@@ -133,8 +131,8 @@ function getWebviewContent(width: number, height: number) {
 					const vscode = acquireVsCodeApi();
 					window.canvas = document.getElementById('rasterCanvas');
 					
-					window.canvas.style.width = window.innerWidth + "px";
-					window.canvas.style.height = (window.innerWidth / (window.canvas.width / window.canvas.height)) + "px";
+					window.canvas.style.width = ${width} + "px";
+					window.canvas.style.height = ${height} + "px";
 					window.canvas.style.left = "0px";
 					window.canvas.style.top = "0px";
 					window.canvas.style.position = "absolute";
