@@ -2,7 +2,7 @@
 	"name": "ppmviewer",
 	"displayName": "PPMViewer",
 	"description": "Portable Pixmap Format Viewer for Visual Studio Code",
-	"version": "1.6.0",
+	"version": "1.7.0",
 	"publisher": "AYH",
 	"repository": {
 		"type": "git",
