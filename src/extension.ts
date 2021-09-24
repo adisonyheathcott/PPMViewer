@@ -104,10 +104,12 @@ export function activate(context: vscode.ExtensionContext) {
 				}
 
 				currentPanel ? currentPanel.webview.postMessage(Array.from(pixArray)) : null;
+				s.close();
 			});
 
 			s.on('error', function(err) {
 				console.log(err.stack);
+				s.close();
 			});
 		})
 	);
